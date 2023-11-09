@@ -1,7 +1,3 @@
-// Force page to scroll to the top when the page reloads.
-// window.onbeforeunload = function () {
-//     window.scrollTo(0, 0);
-// }
 const cursor = document.getElementById('cursor')
 const cursorBlur = document.getElementById('cursor-blur')
 
@@ -47,20 +43,6 @@ navImg.addEventListener('mouseleave', () => {
     cursor.style.border = 'none'
     cursor.style.scale = 1
 })
-
-// const body = document.getElementsByTagName('body')[0]
-// const testimonialText = document.getElementById('testimonial-text')
-// let prevX = 0, prevY = 0
-// body.addEventListener('mousemove', (details) => {
-//     let left = right = top = bottom = false
-
-//     if(prevX < details.x) right = true
-//     else left = true
-//     if(prevY < details.y) bottom = true
-//     else top = true
-
-
-// })
 
 // GSAP Animations
 
@@ -121,7 +103,7 @@ gsap.to('#lower-colon', {
     duration: 1,
     scrollTrigger: {
         scroller: 'body',
-        trigger: '#upper-colon',
+        trigger: '#lower-colon',
         start: 'top 100%',
         end: 'top 100%',
         scrub: 2,
@@ -141,3 +123,7 @@ gsap.to('#page4 h2', {
 })
 
 
+
+// https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-5.jpg?strip=all&lossy=1&sharp=1&ssl=1
+// https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/cafe-about-1.jpg?strip=all&lossy=1&sharp=1&ssl=1
+// https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/cafe-menu.jpg?strip=all&lossy=1&sharp=1&ssl=1
