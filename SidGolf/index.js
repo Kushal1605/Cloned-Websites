@@ -16,7 +16,7 @@ navElements.forEach( (element) => {
         if(nav.style.backgroundColor != 'rgb(0, 0, 0)') {
         cursor.style.backgroundColor = 'transparent'
         cursor.style.border = '0.5px solid white'
-        cursor.style.scale = 3
+        cursor.style.transform = 'scale(3)'
         element.style.color = '#000'
         } else {
             element.style.color = '#c8ff00'
@@ -26,7 +26,7 @@ navElements.forEach( (element) => {
     element.addEventListener('mouseleave', () => {
         cursor.style.backgroundColor = '#c8ff00'
         cursor.style.border = 'none'
-        cursor.style.scale = 1
+        cursor.style.transform = 'scale(1)';
         element.style.color = '#fff'
     })
 })
@@ -35,13 +35,13 @@ const navImg = document.querySelector('#nav img')
 navImg.addEventListener('mouseenter', () => {
     cursor.style.backgroundColor = 'transparent'
     cursor.style.border = '0.5px solid white'
-    cursor.style.scale = 3
+    cursor.style.transform = 'scale(3)';
 })
 
 navImg.addEventListener('mouseleave', () => {
     cursor.style.backgroundColor = '#c8ff00'
     cursor.style.border = 'none'
-    cursor.style.scale = 1
+    cursor.style.transform = 'scale(1)';
 })
 
 // GSAP Animations
@@ -121,9 +121,3 @@ gsap.to('#page4 h2', {
         scrub: 3
     }
 })
-
-
-
-// https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-5.jpg?strip=all&lossy=1&sharp=1&ssl=1
-// https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/cafe-about-1.jpg?strip=all&lossy=1&sharp=1&ssl=1
-// https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/cafe-menu.jpg?strip=all&lossy=1&sharp=1&ssl=1
